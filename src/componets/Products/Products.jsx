@@ -3,10 +3,10 @@ import ProductCard from './ProductCard';
 import CartItems from './CartItems';
 import { toast } from 'react-toastify';
 
-const Products = ({productsPromise}) => {
+const Products = ({productsPromise, cartItems, setCartItems}) => {
     const products = use(productsPromise);
     const [activeProduct,setActiveProduct ] = useState('products')
-    const [cartItems, setCartItems] = useState([]);
+    
     const handleAddToCart = (product) => {
         setCartItems([...cartItems, product]);
         toast.success(`${product.name} added to cart!`)

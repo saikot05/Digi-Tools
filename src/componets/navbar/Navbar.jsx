@@ -1,7 +1,7 @@
 import React from 'react';
 import { MdOutlineShoppingCart } from 'react-icons/md';
 
-const Navbar = () => {
+const Navbar = ({cartCount}) => {
     return (
         <div className="navbar bg-base-100 shadow-sm">
             <div className="max-w-6xl mx-auto w-full flex items-center justify-between">
@@ -30,7 +30,11 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end gap-4">
-                <button className='flex items-center gap-2'><MdOutlineShoppingCart />Login</button>
+                <button className='flex items-center gap-2'>
+                    <div className='relative inline-flex'>
+                        <MdOutlineShoppingCart size={24}/>{cartCount > 0 &&(<span className='absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full w-4 h-4  flex items-center justify-center'>{cartCount}</span>)}
+                    </div>
+                    Login</button>
                 <a className="btn btn-primary rounded-full bg-gradient-to-r from-[#4F39F6] to-purple-500 border-none">Get Started</a>
             </div>
             </div>
