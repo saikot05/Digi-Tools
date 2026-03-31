@@ -1,6 +1,7 @@
 import React, { use, useState } from 'react';
 import ProductCard from './ProductCard';
 import CartItems from './CartItems';
+import { toast } from 'react-toastify';
 
 const Products = ({productsPromise}) => {
     const products = use(productsPromise);
@@ -8,13 +9,16 @@ const Products = ({productsPromise}) => {
     const [cartItems, setCartItems] = useState([]);
     const handleAddToCart = (product) => {
         setCartItems([...cartItems, product]);
+        toast.success(`${product.name} added to cart!`)
     }
     const handleRemoveFromCart = (index) => {
         const newCart = cartItems.filter((item,idx) => index !== idx);
         setCartItems(newCart);
+        toast.error(`Item removed from cart!`)
     }
     const handleCheckout = () => {
         setCartItems([]);
+        toast.success('Checkout successful!')
     }
     return (
         <div>
