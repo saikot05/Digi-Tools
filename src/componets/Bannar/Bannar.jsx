@@ -7,7 +7,7 @@ const Bannar = () => {
         <div className='max-w-6xl mx-auto w-full flex items-center justify-between gap-8 py-20'>
             <div className='space-y-3'>
                 <button className='btn btn-primary btn-soft rounded-full flex items-center gap-2'><img src={circleIcon} alt="" />New: AI-Powered Tools Available</button>
-                <h2 className='text-4xl font-bold'>Supercharge Your <br />Digital Workflow</h2>
+                <h2 className='text-4xl font-bold'>Supercharge Your <br /><span className='text-transparent bg-clip-text bg-gradient-to-r from-[#4F39F6] to-purple-500'>Digital Workflow</span></h2>
                 <p className='text-[#627382] text-sm'>Access premium AI tools, design assets, templates, and productivity <br /> software-all in one place.Start creating faster today. <br />Explore Products
                 </p>
                 <div className='gap-4 flex items-center'>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FaCheck } from 'react-icons/fa';
 const tagColors = {
     'best-seller' : 'bg-orange-100 text-orange-500',
@@ -10,7 +10,9 @@ const periodText ={
     'yearly' : '/Yr',
     'one-time' : '/One-Time',
 }
-const ProductCard = ({ name, description, price, period, tag, tagType, features, icon }) => {
+
+const ProductCard = ({ name, description, price, period, tag, tagType, features, icon, addToCart,product }) => {
+    const [isAdded,setIsAdded] = useState(false);
     return (
         <div className='card bg-base-100 shadow-sm rounded-lg p-6'>
             <div className='space-y-5'>
@@ -34,7 +36,8 @@ const ProductCard = ({ name, description, price, period, tag, tagType, features,
                     </ul>
                 </div>
                 <div>
-                    <button className='btn w-full btn-primary rounded-full bg-gradient-to-r from-[#4F39F6] to-purple-500 border-none'>Buy Now</button>
+                    <button onClick={() => {addToCart(product)
+                setIsAdded(true)}}className={`btn w-full btn-primary rounded-full  border-none ${isAdded ? 'bg-green-500' : 'bg-gradient-to-r from-[#4F39F6] to-purple-500'}`}>{isAdded ? 'Added to Cart' : 'Buy Now'}</button>
                 </div>
             </div>
             
