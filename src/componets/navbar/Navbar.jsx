@@ -18,7 +18,7 @@ const Navbar = () => {
                         <li><a>FAQ</a></li>
                     </ul>
                 </div>
-                <h2 className="btn btn-ghost text-2xl bg-clip-text text-transparent bg-gradient-to-r from-[#4F39F6] to-purple-500">DigiTools</h2>
+                <h2 className="btn btn-ghost text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#4F39F6] to-purple-500">DigiTools</h2>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
