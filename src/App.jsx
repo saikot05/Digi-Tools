@@ -5,6 +5,7 @@ import Bannar from './componets/Bannar/Bannar'
 import Navbar from './componets/navbar/Navbar'
 import Products from './componets/Products/Products'
 import Stats from './componets/Stats/Stats'
+import Steps from './componets/Steps/Steps'
 
 const products = async () =>{
     const res = await fetch("/product.json");
@@ -21,6 +22,7 @@ function App() {
       <Bannar />
       <Stats />
       <Products productsPromise={productsPromise} />
+      <Steps />
     </>
   )
 }
