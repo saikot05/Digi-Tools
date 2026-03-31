@@ -14,13 +14,14 @@ const periodText ={
 const ProductCard = ({ name, description, price, period, tag, tagType, features, icon, addToCart,product }) => {
     const [isAdded,setIsAdded] = useState(false);
     return (
-        <div className='card bg-base-100 shadow-sm rounded-lg p-6'>
+        <div className='relative card bg-base-100 shadow-sm rounded-lg p-6'>
+            <span className={`absolute top-1 right-1 px-2 py-1 rounded-full text-xs font-semibold ${tagColors[tagType]}`}>
+                        {tag}
+            </span>
             <div className='space-y-5'>
                 <div className='flex items-center justify-between'>
                     <img src={icon} alt={name} className='w-10 h-10 object-contain' />
-                    <span className={`px-2 py-1 rounded-full text-xs font-semibold ${tagColors[tagType]}`}>
-                        {tag}
-                    </span>
+                    
                 </div>
                 <div className='space-y-2'>
                     <h3 className='text-xl font-bold'>{name}</h3>

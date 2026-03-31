@@ -1,16 +1,34 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# DigiTools 
 
-Currently, two official plugins are available:
+**A digital product shop I built to practice React.**
+Browse tools, add to cart, checkout nothing fancy, just clean and functional.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
+[![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![DaisyUI](https://img.shields.io/badge/DaisyUI-5A0EF8?style=for-the-badge&logo=daisyui&logoColor=white)](https://daisyui.com/)
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## What is this?
 
-## Expanding the ESLint configuration
+DigiTools is a front-end project where users can browse a collection of digital products, add them to a cart, and go through a simple checkout flow. I built this to get better at React state management and component structuring.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## Features
+
+ **Product Catalog**  cards with pricing, tags (Best Seller, Popular, New), and feature lists
+  **Shopping Cart**  add/remove items, cart count updates live in the navbar
+ **Checkout** clears the cart and confirms with a toast notification
+ **Responsive** works on mobile too, navbar collapses cleanly
+
+
+## Tech
+
+- React
+- Tailwind CSS
+- DaisyUI
+- React Toastify (for notifications)
+- React Icons
+
+
+> Built by [Md Saikot Islam](https://github.com/saikot05)
