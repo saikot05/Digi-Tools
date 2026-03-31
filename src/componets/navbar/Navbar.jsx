@@ -18,7 +18,7 @@ const Navbar = ({cartCount}) => {
                         <li><a>FAQ</a></li>
                     </ul>
                 </div>
-                <h2 className="btn btn-ghost text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#4F39F6] to-purple-500">DigiTools</h2>
+                <h2 className="btn btn-ghost sm:text-xl lg:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#4F39F6] to-purple-500">DigiTools</h2>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -29,7 +29,7 @@ const Navbar = ({cartCount}) => {
                 <li><a>FAQ</a></li>
                 </ul>
             </div>
-            <div className="navbar-end gap-4">
+            <div className="navbar-end gap-2">
                 <button className='flex items-center gap-2'>
                     <div className='relative inline-flex'>
                         <MdOutlineShoppingCart size={24}/>{cartCount > 0 &&(<span className='absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full w-4 h-4  flex items-center justify-center'>{cartCount}</span>)}
